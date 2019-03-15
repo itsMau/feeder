@@ -1,0 +1,332 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>38595</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" 
+	integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	crossorigin=""/>
+	
+    <script src="scripts/modernizr.js"></script>
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+	integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+	crossorigin=""></script>
+    <script src="scripts/main.js"></script>
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+	<div class="body-wrapper">
+		<div class="header">
+			<div class="mainmenu">
+				<div class="logo-container">
+					<a href="#">
+						<img src="images/logo_144x26.jpg" class="logo">
+					</a>
+				</div>
+				<div class="menu-container">
+					<ul class="menu">
+						<li>
+							<a href="#">CONTACT US</a>
+						</li>
+						<li>
+							<a href="#">SERVICES</a>
+						</li>
+						<li>
+							<a href="#">PORTFOLIO</a>
+						</li>
+						<li>
+							<a href="#">ABOUT US</a>
+						</li>
+						<li>
+							<a href="#">FEATURES</a>
+						</li>
+						<li>
+							<a href="#">HOME</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/search_22x22.jpg">		
+							</a>
+						</li>
+					</ul>
+					<a href="javascript:void(0);" class="menu-toggler" onclick="ToggleMenu(this)"><span></span><span></span><span></span></a>
+				</div>
+			</div>
+		</div>
+		<div class="mainBody">
+			<div class="welcomeBanner">
+				<div class="welcomeBannerInner">
+					<div class="textBlock">
+						<span>FEEDER IS HERE</span>
+						<h3>Free Sketch3 One Page Theme<br>Ready For Coding</h3>
+						<span>Well, the way they make shows is, they make one show.</span>
+					</div>
+					<div class="arrow-down">
+						<a href="javascript:void(0);" onclick="GoDown()">
+							<img src="images/arrowDown_30x32.jpg" class="arrow-down-img">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="aboutUs">
+				<div class="aboutUsText">
+					<h3>About Feeder</h3>
+					<p>Mauris lacinia porta faucibus. Fusce eu est ac eros vulputate mollis in ac felis. Aenean commodo scelerisque mi sed imperdiet. Donec at hendrerit nisi, eget vestibulum nisi. Sed sit amet magna luctus, facilisis erat quis, sagittis ligula. Aenean dignissim velit quis leo consequat ultricies. Proin quis pretium justo. Vestibulum at eros nisl. Fusce lobortis erat ante, eu cursus sapien molestie at. Pellentesque placerat ante diam, et euismod lacus dictum vel. Phasellus vitae sollicitudin mi.</p>
+				</div>
+			</div>
+			<div class="introduction">
+				<div class="introductionImg">
+				</div>
+				<div class="introductionText">
+					<div class="introductionTextInner">
+						<h3>Why to choose Feeder</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.<br> ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio">
+				<div class="portfolioText">
+					<h3>Portfolio</h3>
+					<p>Mauris lacinia porta faucibus. Fusce eu est ac eros vulputate mollis in ac .</p>
+				</div>
+				
+				<div class="portfolioFilter">
+					<ul class="portfolioGalleryMenu">
+						<li><a href="javascript:void(0)" class="active" filter="portfolioGallery-All" onclick="OpenTab(this);">All</a></li>
+						<li><a href="javascript:void(0)" filter="portfolioGallery-Design" onclick="OpenTab(this);">Design</a></li>
+						<li><a href="javascript:void(0)" filter="portfolioGallery-Identity" onclick="OpenTab(this);">Identity</a></li>
+						<li><a href="javascript:void(0)" filter="portfolioGallery-Photography" onclick="OpenTab(this);">Photography</a></li>
+						<li><a href="javascript:void(0)" filter="portfolioGallery-WebDesign" onclick="OpenTab(this);">Web design</a></li>
+					</ul>
+					<span id="arrowUnder"></span>
+				</div>
+				
+				<div class="portfolioGalleryContainer">
+					<ul>
+						<li class="portfolioGallery-All">
+							<div class="masonry-grid" >
+								<div class="masonry-grid-item masonry-grid-item-0"></div>
+								<div class="masonry-grid-item masonry-grid-item-1">
+									<div class="pinecone">
+										<h3>PINECONE</h3>
+										<h4>Print / Photography</h4>
+										<span></span>
+									</div>
+								</div>
+								<div class="masonry-grid-item masonry-grid-item-2"></div>
+								<div class="masonry-grid-item masonry-grid-item-3"></div>
+								<div class="masonry-grid-item masonry-grid-item-4"></div>
+								<div class="masonry-grid-item masonry-grid-item-5"></div>
+								<div class="masonry-grid-item masonry-grid-item-6"></div>
+								<div class="masonry-grid-item masonry-grid-item-7"></div>
+							</div>
+						</li>
+						<li class="portfolioGallery-Design">
+
+						</li>
+						<li class="portfolioGallery-Identity">
+
+						</li>
+						<li class="portfolioGallery-Photography">
+
+						</li>
+						<li class="portfolioGallery-WebDesign">
+
+						</li>
+					</ul>
+				</div>
+				
+				<button class="portfolioViewAll">View All</button>
+			</div>
+			
+			<div class="featuredProjectContainer">
+				<div class="featuredProject" style="margin-left:0%;">
+					<div class="featuredProjectItem featuredProjectItem-0 active">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-6 featuredProjectItemInner">
+									<h3>Then they show that show to the people who make shows</h3>
+									<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother’s.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="featuredProjectItem featuredProjectItem-1">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-6 featuredProjectItemInner">
+									<h3>Then they show that show to the people who make shows</h3>
+									<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother’s.</p>
+								</div>
+							</div>
+						</div>
+					</div>				
+				</div>
+				
+				<a href="javascript:void(0);" class="featuredProjectArrowLeft disabled" onclick="MoveSlideLeft();"><img src="images/arrowLeft_35x35.jpg"></a>
+				<a href="javascript:void(0);" class="featuredProjectArrowRight" onclick="MoveSlideRight();"><img src="images/arrowRight_35x35.jpg"></a>
+			</div>
+			
+			<div class="services">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-sm-10 servicesTextBlock" style="text-align:center;">
+							<h3>What We Do</h3>
+							<p>Mauris lacinia porta faucibus. Fusce eu est ac eros vulputate mollis in ac felis. Aenean commodo scelerisque mi sed imperdiet. Donec at hendrerit nisi, eget vestibulum nisi. Sed sit amet magna luctus, facilisis erat quis.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 column-centered servicesSmallBlock">
+							<div class="servicesVectorLogo">
+								<img src="images/servicesLogo00_47x52.jpg">
+							</div>
+							<h4>GRAPHIC DESIGN</h4>
+							<p>Lorem Ipsum Proin gravida nibh vel  velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						</div>
+						<div class="col-sm-4 column-centered servicesSmallBlock">
+							<div class="servicesVectorLogo">
+								<img src="images/servicesLogo01_52x52.jpg">
+							</div>
+							<h4>WEB DEVELOPMENT</h4>
+							<p>Lorem Ipsum Proin gravida nibh vel  velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						</div>
+						<div class="col-sm-4 column-centered servicesSmallBlock">
+							<div class="servicesVectorLogo">
+								<img src="images/servicesLogo02_52x52.jpg">
+							</div>
+							<h4>MARKETING</h4>
+							<p>Lorem Ipsum Proin gravida nibh vel  velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 column-centered servicesSmallBlock">
+							<div class="servicesVectorLogo">
+								<img src="images/servicesLogo03_43x52.jpg">
+							</div>
+							<h4>VIDEO PRODUCTION</h4>
+							<p>Lorem Ipsum Proin gravida nibh vel  velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						</div>
+						<div class="col-sm-4 column-centered servicesSmallBlock">
+							<div class="servicesVectorLogo">
+								<img src="images/servicesLogo04_52x52.jpg">
+							</div>
+							<h4>PHOTOGRAPHY</h4>
+							<p>Lorem Ipsum Proin gravida nibh vel  velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						</div>
+						<div class="col-sm-4 column-centered servicesSmallBlock">
+							<div class="servicesVectorLogo">
+								<img src="images/servicesLogo05_52x52.jpg">
+							</div>
+							<h4>COPYWRITING</h4>
+							<p>Lorem Ipsum Proin gravida nibh vel  velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="video">
+				<div class="videoInner">
+					<video controls>
+						 <source src="images/video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			
+			<div class="logosList">
+				<div class="container">
+					<div class="row centered-imgs">
+						<div class="col-sm">
+							<img src="images/logoListLogo00_42x46.jpg">
+						</div>
+						<div class="col-sm">
+							<img src="images/logoListLogo01_52x46.jpg">
+						</div>
+						<div class="col-sm">
+							<img src="images/logoListLogo02_47x46.jpg">
+						</div>
+						<div class="col-sm">
+							<img src="images/logoListLogo03_44x46.jpg">
+						</div>
+						<div class="col-sm">
+							<img src="images/logoListLogo04_46x46.jpg">
+						</div>
+						<div class="col-sm">
+							<img src="images/logoListLogo05_67x41.jpg">
+						</div>
+						<div class="col-sm">
+							<img src="images/logoListLogo06_46x46.jpg">
+						</div>
+						<div class="col-sm">
+							<img src="images/logoListLogo07_46x46.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="contact">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-sm-10 contactTextBlock">
+							<h3>Contact Us</h3>
+							<p>Mauris lacinia porta faucibus. Fusce eu est ac eros vulputate mollis in ac felis. Aenean commodo scelerisque mi sed imperdiet. Donec at hendrerit nisi, eget vestibulum nisi. Sed sit amet magna luctus, facilisis erat quis.</p>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-sm-8">
+							<div class="contactForm">
+								<input type="text" name="name" id="name" class="contactFormName" placeholder="YOUR NAME" required />
+								<input type="email" name="email" id="email" class="contactFormEmail" placeholder="VALID EMAIL" required />
+								<textarea id="message" name="message" class="contactFormMessage" placeholder="YOUR MESSAGE"></textarea>
+								<input type="submit" class="contactFormSubmit" value="SEND MESSAGE"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="contactMap">
+					<div id="contactmap"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="social">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm">
+							<ul class="footerMenu">
+								<li><a href="#">FACEBOOK</a></li>
+								<li><a href="#">TWITTER</a></li>
+								<li><a href="#" class="googlePlus">GOOGLE</a></li>
+								<li><a href="#">BEHANCE</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="bottom">
+				<span class="copyright">© 2015 Srdjan Pajdic. All rights prc....</span>
+			</div>
+		</div>
+    </div>
+	<script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
+</html>
