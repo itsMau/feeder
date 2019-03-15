@@ -16,7 +16,7 @@ body{
 
 .mainmenu{
 	min-height: 80px;
-	display: inline-block;
+	display: flex;
 	position:absolute;
 	width:100%;
 	background:rgba(17,17,17,0);
@@ -28,6 +28,7 @@ body{
 	position:relative;
 	display:flex;
 	float:left;
+	margin:auto;
 	margin-left:100px;
 	justify-content: center;
 	align-items: center;
@@ -43,6 +44,7 @@ body{
 	position:relative;
 	display:flex;
 	float:right;
+	margin:auto;
 	margin-right:101px;
 }
 
